@@ -1,0 +1,13 @@
+parameters:
+    database_driver: pdo_mysql
+    database_host: localhost
+    database_port: '3306'
+    database_name: sf2blog_dev
+    database_user: jat_dev
+    database_password: 'jat_dev'
+    mailer_transport: smtp
+    mailer_host: localhost
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: adc63e46f4ed14274463b9aa303427616817bbf6
