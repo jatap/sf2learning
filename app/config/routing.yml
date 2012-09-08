@@ -1,8 +1,20 @@
-acme_hello:
-    resource: "@AcmeHelloBundle/Resources/config/routing.yml"
+jat_extranet:
+    resource: "@JatExtranetBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+jat_backend:
+    resource: "@JatBackendBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+jat_frontend:
+    resource: "@JatFrontendBundle/Controller/"
+    type:     annotation
     prefix:   /
 
 # Internal routing configuration to handle ESI
 #_internal:
 #    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
 #    prefix:   /_internal
+
