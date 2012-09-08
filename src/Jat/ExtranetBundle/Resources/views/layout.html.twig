@@ -1,25 +1,22 @@
 {% extends '::base.html.twig' %}
 
-{% block stylesheets %}{% endblock %}
-{% block javascripts %}{% endblock %}
-
 {% block body %}
-<header>
-    <h1><a href="{{ path('home') }}">SF2 Learning - Extranet</a></h1>
-    <nav>
-        <ul>
-            <li><a href="{{ path('jat_extranet_main') }}">Extranet</a></li>
-            <li><a href="{{ path('jat_frontend_main') }}">Home</a></li>
-            <li><a href="{{ path('jat_admin_main') }}">Admin</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1><a href="{{ path('home') }}">SF2 Learning - Extranet</a></h1>
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="{{ path('jat_extranet_main') }}">Extranet</a></li>
+                <li><a href="{{ path('jat_frontend_main') }}">Home</a></li>
+                <li><a href="{{ path('jat_admin_main') }}">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<article>
-    {% block article %}{% endblock %}
-</article>
+    <article>
+        {% block article %}{% endblock %}
+    </article>
 
-<aside>
-    {% block aside %}{% endblock %}
-</aside>
+    <aside>
+        {% block aside %}{% endblock %}
+    </aside>
 {% endblock %}
