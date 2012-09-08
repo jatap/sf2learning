@@ -1,12 +1,9 @@
 {% extends '::base.html.twig' %}
 
-{% block stylesheets %}{% endblock %}
-{% block javascripts %}{% endblock %}
-
 {% block body %}
     <header>
         <h1><a href="{{ path('home') }}">SF2 Learning - Frontend</a></h1>
-        <nav>
+        <nav class="nav">
             <ul>
                 <li><a href="{{ path('jat_frontend_main') }}">Home</a></li>
                 <li><a href="{{ path('jat_extranet_main') }}">Extranet</a></li>
