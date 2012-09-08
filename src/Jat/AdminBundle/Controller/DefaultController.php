@@ -1,6 +1,6 @@
 <?php
 
-namespace Jat\BackendBundle\Controller;
+namespace Jat\AdminBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -10,15 +10,17 @@ class DefaultController extends Controller
 {
     /**
      * @Route(
-     *  "/admin/{trailingSlash}",
-     *  name="_admin_main",
-     *  requirements={"trailingSlash" = "[/]{0,1}"},
-     *  defaults={"trailingSlash" = "/"}
+     *  "/",
+     *  name = "jat_admin_main"
      * )
      * @Template()
      */
     public function indexAction()
     {
-        return array();
+        return $this->render('JatAdminBundle:Default:index.html.twig',
+                             array(
+                                  'where' => 'Control Panel'
+                             )
+        );
     }
 }

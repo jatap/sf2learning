@@ -6,11 +6,11 @@
 
     <!--
     <parameters>
-        <parameter key="jat_backend.example.class">Jat\BackendBundle\Example</parameter>
+        <parameter key="jat_admin.example.class">Jat\AdminBundle\Example</parameter>
     </parameters>
 
     <services>
-        <service id="jat_backend.example" class="%jat_backend.example.class%">
+        <service id="jat_admin.example" class="%jat_admin.example.class%">
             <argument type="service" id="service_id" />
             <argument>plain_value</argument>
             <argument>%parameter_name%</argument>

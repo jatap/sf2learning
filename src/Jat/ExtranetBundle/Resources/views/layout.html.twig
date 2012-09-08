@@ -1,49 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Demo Bundle{% endblock %}</title>
-        <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
-        <link rel="stylesheet" href="{{ asset('bundles/acmedemo/css/demo.css') }}" />
-    </head>
-    <body>
-        <div id="symfony-wrapper">
-            <div id="symfony-header">
-                <a href="{{ path('_extranet_main') }}">
-                    <img src="{{ asset('bundles/acmedemo/images/logo.gif') }}" alt="Symfony logo" />
-                </a>
-                <form id="symfony-search" method="GET" action="http://symfony.com/search">
-                    <label for="symfony-search-field"><span>Search on Symfony Website</span></label>
-                    <input name="q" id="symfony-search-field" type="search" placeholder="Search on Symfony website" class="medium_txt" />
-                    <input type="submit" class="symfony-button-grey" value="OK" />
-                </form>
-            </div>
+{% extends '::base.html.twig' %}
 
-            {% for flashMessage in app.session.flashbag.get('notice') %}
-                <div class="flash-message">
-                    <em>Notice</em>: {{ flashMessage }}
-                </div>
-            {% endfor %}
+{% block stylesheets %}{% endblock %}
+{% block javascripts %}{% endblock %}
 
-            {% block content_header %}
-                <ul id="menu">
-                    {% block content_header_more %}
-                        <li><a href="{{ path('_demo') }}">Demo Home</a></li>
-                    {% endblock %}
-                </ul>
+{% block body %}
+<header>
+    <h1><a href="{{ path('home') }}">SF2 Learning - Extranet</a></h1>
+    <nav>
+        <ul>
+            <li><a href="{{ path('jat_extranet_main') }}">Extranet</a></li>
+            <li><a href="{{ path('jat_frontend_main') }}">Home</a></li>
+            <li><a href="{{ path('jat_admin_main') }}">Admin</a></li>
+        </ul>
+    </nav>
+</header>
 
-                <div style="clear: both"></div>
-            {% endblock %}
+<article>
+    {% block article %}{% endblock %}
+</article>
 
-            <div class="symfony-content">
-                {% block content %}
-                {% endblock %}
-            </div>
-
-            {% if code is defined %}
-                <h2>Code behind this page</h2>
-                <div class="symfony-content">{{ code|raw }}</div>
-            {% endif %}
-        </div>
-    </body>
-</html>
+<aside>
+    {% block aside %}{% endblock %}
+</aside>
+{% endblock %}

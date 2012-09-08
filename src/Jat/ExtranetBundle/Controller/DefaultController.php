@@ -10,15 +10,17 @@ class DefaultController extends Controller
 {
     /**
      * @Route(
-     *  "/extranet/{trailingSlash}",
-     *  name="_extranet_main",
-     *  requirements={"trailingSlash" = "[/]{0,1}"},
-     *  defaults={"trailingSlash" = "/"}
+     *  "/",
+     *  name = "jat_extranet_main"
      * )
      * @Template()
      */
     public function indexAction()
     {
-        return array();
+        return $this->render('JatExtranetBundle:Default:index.html.twig',
+                             array(
+                                  'where' => 'Extranet Control Panel'
+                             )
+        );
     }
 }
