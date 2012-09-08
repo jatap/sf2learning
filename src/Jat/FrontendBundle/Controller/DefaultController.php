@@ -11,7 +11,7 @@ class DefaultController extends Controller
     /**
      * @Route(
      *  "/",
-     *  name="_front_main"
+     *  name="_frontend_main"
      * )
      * @Template()
      */
