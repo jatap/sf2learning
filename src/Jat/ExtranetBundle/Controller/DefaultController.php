@@ -9,9 +9,12 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/extranet/{trailingSlash}", name="extranet",
-     *        requirements={"trailingSlash" = "[/]{0,1}"},
-     *        defaults={"trailingSlash" = "/"})
+     * @Route(
+     *  "/extranet/{trailingSlash}",
+     *  name="_extranet_main",
+     *  requirements={"trailingSlash" = "[/]{0,1}"},
+     *  defaults={"trailingSlash" = "/"}
+     * )
      * @Template()
      */
     public function indexAction()
