@@ -9,7 +9,9 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/admin", name="admin")
+     * @Route("/admin/{trailingSlash}", name="admin",
+     *        requirements={"trailingSlash" = "[/]{0,1}"},
+     *        defaults={"trailingSlash" = "/"})
      * @Template()
      */
     public function indexAction()
