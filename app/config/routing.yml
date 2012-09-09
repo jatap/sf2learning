@@ -1,8 +1,37 @@
-acme_hello:
-    resource: "@AcmeHelloBundle/Resources/config/routing.yml"
-    prefix:   /
+jat_admin:
+    resource: "@JatAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /{_locale}/admin/
+    requirements:
+        _locale: en|es|fr|de
+    defaults:
+        _locale: es
+
+jat_extranet:
+    resource: "@JatExtranetBundle/Controller/"
+    type:     annotation
+    prefix:   /{_locale}/extranet/
+    requirements:
+        _locale: en|es|fr|de
+    defaults:
+        _locale: es
+
+jat_frontend:
+    resource: "@JatFrontendBundle/Controller/"
+    type:     annotation
+    prefix:   /{_locale}
+    requirements:
+        _locale: en|es|fr|de
+    defaults:
+        _locale: es
+
+# Home
+home:
+    pattern:  /
+    defaults: { _controller: JatFrontendBundle:Default:home, _locale: es }
 
 # Internal routing configuration to handle ESI
 #_internal:
 #    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
 #    prefix:   /_internal
+

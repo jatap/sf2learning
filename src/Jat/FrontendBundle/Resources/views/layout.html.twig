@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {% stylesheets output="css/style-front.css"
+                   '@JatFrontendBundle/Resources/public/css/style-base.css'
+                   '@JatFrontendBundle/Resources/public/css/style-responsive.css'
+                   filter="yui_css" %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+    {% javascripts output="js/script-front.js"
+                   '@JatFrontendBundle/Resources/public/js/jquery-1.8.0.min.js'
+                   '@JatFrontendBundle/Resources/public/js/bootstrap.min.js'
+                   %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
+{% block body %}
+    <header class="well well-large">
+        <h1><a href="{{ path('home') }}">SF2 Learning - Frontend</a></h1>
+
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="{{ path('jat_frontend_main') }}">Home</a></li>
+                <li><a href="{{ path('jat_extranet_main') }}">Extranet</a></li>
+                <li><a href="{{ path('jat_admin_main') }}">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        {% block article %}{% endblock %}
+    </article>
+
+    <aside>
+        {% block aside %}{% endblock %}
+    </aside>
+{% endblock %}
