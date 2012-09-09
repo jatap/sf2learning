@@ -1,8 +1,127 @@
+commit 3592a635962ad281ad5318e6a904ebdf35ee3081
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sun Sep 9 06:04:42 2012 +0200
+
+    - Deleted Sample Acmb Bundle.
+
+commit 2df519b0710e48d0af964fe16bf59fff02e38079
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sun Sep 9 03:35:57 2012 +0200
+
+    - Added Assetic handler.
+
+commit 93a67f2f166176f8b8d5232ea11865d81d4b9414
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 8 21:40:22 2012 +0200
+
+    - Fixing js assets.
+
+commit 24ff3ab9d6b9bb92079333420be56417185e6808
+Merge: fa29821 c1b1b33
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 8 21:39:07 2012 +0200
+
+    - Refactoring layouts.
+
+commit fa2982124bf052304d1f2b65f59763c146d00323
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 8 21:08:20 2012 +0200
+
+    - Refactorized themes and views.
+
+commit c1b1b3384e6cac4bf306e7b1a4227ee433df7647
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 8 21:08:20 2012 +0200
+
+    - Refactorized themes and views.
+
+commit fe5d041f2d759d7a4ff3ed0c98680f5268d9ff56
+Merge: 9ed7cbb 6bedd55
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 8 19:31:25 2012 +0200
+
+    Merge branch 'develop' of /Users/julioantuneztarin/Git/sf2learning into develop
+    
+    Conflicts:
+    	app/Resources/views/base.html.twig
+    	src/Jat/AdminBundle/Controller/DefaultController.php
+    	src/Jat/ExtranetBundle/Controller/DefaultController.php
+
+commit 9ed7cbbdecbc47547d151f73d94b9196d2283ae9
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 8 19:24:43 2012 +0200
+
+    - Refactorized BackendBundle to AdminBundle.
+
+commit 6bedd55b79e10d7c1af38c692efbf1abdb52f588
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 8 19:24:43 2012 +0200
+
+    - Refactorized BackendBundle to AdminBundle.
+
+commit 8bc59017888621a123c5d465e9ea79fd9443a499
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 8 02:53:39 2012 +0200
+
+    - Changed main logo link url.
+
+commit 674b1d00e234f7e54abdf5c3be827ad4e91a9c38
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 8 02:51:30 2012 +0200
+
+    - Added a layout to each Bundle.
+
+commit 5f416458a1114aa84778308fad04056329196378
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 8 02:47:03 2012 +0200
+
+    - Refactorized route names accoding to Symfony standards.
+
+commit ffc562734d9cc676b223ed45bfc9868fa094e7fd
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 8 02:29:09 2012 +0200
+
+    - Added an Extranet Bundle.
+    - Refactorized main routes to allow backslashed ones.
+
+commit 5b43a4415ef0a019840ca43366b0a2b9d292247c
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 8 02:13:43 2012 +0200
+
+    - Added three basic bundles.
+
+commit 677db0339b35c709264aa8fdba028eb31ecc14a6
+Merge: b20257c ca29238
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Wed Sep 5 07:54:01 2012 +0200
+
+    - Merge branch 'develop'
+
+commit ca292380398b1a6338eb92d7241dde55ab7df145
+Merge: 954f142 ac82c17
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Wed Sep 5 07:53:15 2012 +0200
+
+    - Merge branch 'release-1.0' into develop
+
+commit ac82c177dcb69fad2d5b3508d6517d3137852ebc
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Wed Sep 5 07:52:32 2012 +0200
+
+    - Bumped version to number 1.0.
+
 commit 954f142001418f3f2d3b9b100f03915a540522ba
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
 Date:   Wed Sep 5 07:51:42 2012 +0200
 
     - Fixing README.md.
+
+commit b20257cccda76ce844ffbc895b081c6f9ba01bc3
+Merge: 1361dfa 90aa199
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Wed Sep 5 07:48:49 2012 +0200
+
+    - Merge branch 'develop'
 
 commit 90aa19995951ccb20077729c78483415b9047a0d
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
